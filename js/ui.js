@@ -42,7 +42,7 @@
   act('about', 'About ...', null, 'Information about Mars', null, null, () => M.dialogs.about());
   app.toggleBreakpoints = () => X.toggleBreakpoints();
   app.action = (id) => { if (A[id].enabled) A[id].fn(); };
-  act('prints', 'Tirar prints', null, 'Gera prints do código-fonte e exporta em Word (.docx)', null, null, () => M.prints.run());
+  act('prints', 'Tirar prints do código', null, 'Gera prints do código-fonte e exporta em Word (.docx)', null, null, () => M.prints.run());
 
   /* settings check items -------------------------------------------------------------- */
   const ck = (key, label, tip, fn) => ({ check: true, key, label, tip, fn });

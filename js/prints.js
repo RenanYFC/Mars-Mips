@@ -160,9 +160,9 @@
       document.body.append(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 30000);
       P.last = { blob, name, count: list.length, captions: list.map((x) => x.caption) };
-      U.message('Tirar prints', list.length + ' prints exportados em ' + name + '.');
+      U.message('Tirar prints do código', list.length + ' prints exportados em ' + name + '.');
     } catch (e) {
-      U.message('Tirar prints', 'N\u00e3o foi poss\u00edvel gerar os prints: ' + e.message, 'error');
+      U.message('Tirar prints do código', 'N\u00e3o foi poss\u00edvel gerar os prints: ' + e.message, 'error');
     } finally {
       msg.style.display = ''; reg.style.display = ''; f.cl.style.visibility = '';
       app.selectTab(tab); f.ta.scrollTop = top; f.ta.scrollLeft = left; ed.sync(f);
